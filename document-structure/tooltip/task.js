@@ -11,7 +11,7 @@ listLinks.forEach((elem) => {
         tooltip.textContent = elem.getAttribute('title');
         tooltip.classList.add('tooltip_active');
 
-        const tooltipActive = elem.querySelector('.tooltip_active');
+        const tooltipActive = document.querySelector('.tooltip_active');
 
         if (tooltipActive) {
             tooltipActive.remove();
@@ -34,6 +34,7 @@ listLinks.forEach((elem) => {
         document.addEventListener('scroll', function () {
             tooltip.style.top = coordinatesTop - window.scrollY + 'px';
         });
-        elem.appendChild(tooltip);
+        elem.insertAdjacentElement('afterEnd', tooltip);
+
     })
 })
