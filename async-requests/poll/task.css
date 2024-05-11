@@ -9,3 +9,17 @@ body {
 .poll__title {
   margin-bottom: 20px;
 }
+
+.poll__answer {
+  border: 1px solid rgba(0, 0, 255, 0.335);
+  border-radius: 4px;
+  background: transparent;
+}
+
+.poll__answer:not(:last-child) {
+  margin-right: 5px;
+}
+
+.poll__answer:active {
+  background: rgba(0, 0, 255, 0.335);
+}
