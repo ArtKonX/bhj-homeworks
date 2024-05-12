@@ -2,7 +2,7 @@
 
 const pollAnswers = document.querySelectorAll('.poll__answers');
 
-let xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'https://students.netoservices.ru/nestjs-backend/poll');
 
