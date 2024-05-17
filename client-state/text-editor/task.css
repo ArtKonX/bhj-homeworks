@@ -8,3 +8,18 @@ textarea {
   border: 1px solid #e2e2e2;
   box-sizing: border-box;
 }
+
+.delete-btn {
+  color: white;
+  background-color: gray;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+.delete-btn:hover {
+  background-color: rgb(72, 72, 207);
+  transition: 1s;
+}
